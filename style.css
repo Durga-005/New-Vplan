@@ -1479,3 +1479,85 @@ button {
         transform: none;
     }
 }
+
+/* =================================
+   V PLAN SECTION HEADINGS
+================================= */
+
+/* Common heading style */
+.intro h2,
+.services h2,
+.process h2,
+.contact h2 {
+    font-family: var(--serif);
+    font-size: clamp(38px, 4.5vw, 60px);
+    font-weight: 500;
+    line-height: 1.15;
+    letter-spacing: -1.5px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+/* About V PLAN */
+.intro h2 {
+    color: var(--forest-deep);
+}
+
+/* What We Do */
+.services h2 {
+    color: var(--cream);
+}
+
+/* How We Work */
+.process h2 {
+    color: var(--forest-deep);
+}
+
+/* Start Your Conversation */
+.contact h2 {
+    color: var(--cream);
+    max-width: 550px;
+}
+
+/* Gold accent line */
+.intro h2::after,
+.services h2::after,
+.process h2::after,
+.contact h2::after {
+    content: "";
+    display: block;
+    width: 55px;
+    height: 2px;
+    background: var(--gold);
+    margin-top: 18px;
+    transition: width 0.4s ease;
+}
+
+/* Elegant hover animation */
+.intro h2:hover::after,
+.services h2:hover::after,
+.process h2:hover::after,
+.contact h2:hover::after {
+    width: 95px;
+}
+
+/* Optional gold italic emphasis */
+.intro h2 em,
+.services h2 em,
+.process h2 em,
+.contact h2 em {
+    color: var(--gold);
+    font-style: italic;
+}
+
+/* Mobile heading size */
+@media (max-width: 650px) {
+    .intro h2,
+    .services h2,
+    .process h2,
+    .contact h2 {
+        font-size: clamp(34px, 9vw, 44px);
+        letter-spacing: -1px;
+        margin-bottom: 24px;
+    }
+}
