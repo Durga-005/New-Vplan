@@ -986,7 +986,44 @@ button {
 .back-top {
     color: var(--gold);
 }
+.instagram-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  width: fit-content;
+  margin-top: 25px;
+  padding: 12px 16px;
+  border: 1px solid rgba(197, 167, 121, 0.45);
+  border-radius: 3px;
+  color: #c5a779;
+  font-size: 12px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
 
+.instagram-link svg {
+  width: 21px;
+  height: 21px;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.instagram-link:hover {
+  background: #c5a779;
+  color: #171916;
+  transform: translateY(-3px);
+}
+
+.instagram-arrow {
+  font-size: 15px;
+  transition: transform 0.3s ease;
+}
+
+.instagram-link:hover .instagram-arrow {
+  transform: translate(2px, -2px);
+}
 /* FLOATING WHATSAPP BUTTON */
 
 .floating-whatsapp {
